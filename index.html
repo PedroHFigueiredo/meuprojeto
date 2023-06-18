@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikcraft - Bicicletas Elétricas </title>
+    <meta name="description"
+        content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft. ">
+    <link rel="stylesheet" href="css/stype.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        .bicicletas-lista{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.bicicletas-lista h2 {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+
+
+.bicicletas-lista ul{
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+
+}
+.bicicletas-lista li{
+    flex: 1;
+    min-width: 280px;
+}
+
+.bicicletas-lista a {
+    display: block;
+}
+
+.bicicletas-lista img{
+    margin-bottom: 16px;
+}
+
+.bicicletas-lista h3{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.bicicletas-lista h3::before{
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    background-color: var(--cor-p1);
+    transition: width 0.2;
+}
+
+.bicicletas-lista a:hover h3::before{
+    width: 24px;
+
+}
+
+.bicicletas-lista li span{
+    padding-left: 20px;
+}
+
+@media(max-width: 800px) {
+    .bicicletas-lista{
+        padding-bottom: 60px;
+    }
+    .bicicletas-lista ul {
+        gap: 20px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header class="header-bg">
+        <div class="header container">
+            <a href="./index.html"><img src="img/bikcraft.svg" alt="Bikcraft"></a>
+            <nav aria-label="primaria">
+                <ul class="header-menu font-1-m cor-0">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">contato</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="introducao-bg">
+        <div class="introducao container">
+            <div class="introducao-conteudo">
+                <h1 class="font-1-xxl cor-0">Bicicletas Feita Sobre Medida<span class="cor-p1">.</span></h1>
+                <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feita sob medida para você.
+                    Explore o mundo na sua velocidade com a Bikcraft.</p>
+                <a class="botao cor-p5" href="./bicicletas.html">Escolha a sua</a>
+            </div>
+            <div>
+                <img src="img/fotos/introducao.jpg" alt="Bicicleta Elétrica preta">
+            </div>
+        </div>
+    </main>
+
+    <article class="bicicletas-lista">
+        <h2 class="container font-1-1-xx1">Escolha a sua<span class="cor-p1">.</span></h2>
+
+        <ul>
+            <li>
+                <a href="./bicicletas/magic.html">
+                    <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta Preta">
+                    <h3 class="font-1-xl">Magic Mignt</h3>
+                    <span class="font-2-m cor-8">R$ 2499</span>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="./bicicletas/magic.html">
+                    <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta Preta">
+                    <h3 class="font-1-xl">nimbus Stark</h3>
+                    <span class="font-2-m cor-8">R$ 4999</span>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="./bicicletas/magic.html">
+                    <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta Preta">
+                    <h3 class="font-1-xl">Nebula Cosmic</h3>
+                    <span class="font-2-m cor-8">R$ 3999</span>
+                </a>
+            </li>
+        </ul>
+
+    </article>
+
+
+</body>
+
+</html>
